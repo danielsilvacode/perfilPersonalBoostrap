@@ -1,0 +1,29 @@
+/* Estilo para la imagen de perfil en forma de círculo usando máscara 
+.img-profile {
+    width: 150px;
+    /* Ajusta el tamaño de la imagen según sea necesario 
+    height: 150px;
+    /* Ajusta el tamaño de la imagen según sea necesario 
+    object-fit: cover;
+    /* Para asegurar que la imagen se ajuste dentro del círculo 
+    mask: radial-gradient(circle, transparent 50%, black 50%);
+    /* Máscara para crear el círculo 
+    -webkit-mask: radial-gradient(circle, transparent 50%, black 50%);
+    /* Máscara para navegadores basados en WebKit (Safari) */
+
+
+/* Estilo para la imagen de perfil en forma de círculo, usando !important para priorizarlo */
+.img-profile {
+    width: 150px;
+    /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 150px;
+    /* Ajusta el tamaño de la imagen según sea necesario */
+    object-fit: cover;
+    /* Para asegurar que la imagen se ajuste dentro del círculo */
+    border-radius: 50% !important;
+    /* Priorizamos este estilo */
+    mask: none !important;
+    /* Anulamos cualquier máscara que pueda interferir */
+    -webkit-mask: none !important;
+    /* Anulamos máscara en navegadores basados en WebKit (Safari) */
+}
